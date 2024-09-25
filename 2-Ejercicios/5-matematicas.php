@@ -21,14 +21,6 @@
             return $cadena[$pos-1];
         }
 
-
-
-
-
-
-
-
-
     ?>
     
 </body>
