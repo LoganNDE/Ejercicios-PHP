@@ -19,7 +19,6 @@
         function digitosN(int $num, int $pos){
             $cadena = strval($num);            
             return $cadena[$pos-1];
-            
         }
 
     ?>
