@@ -1,18 +1,4 @@
-
-
-
-
-
 <?php
-
-/*A partir de una frase con palabras sólo separadas por espacios, devolver:
-• Letras totales y cantidad de palabras
-• Una línea por cada palabra indicando su tamaño
-Nota: no se puede usar str_word_count*/
-
-
-
-
     function detallesFrase($frase){
 
         $contadorEspacios = substr_count($frase, ' ');
@@ -50,13 +36,5 @@ Nota: no se puede usar str_word_count*/
             echo $contadorLetrasAux . "<br>";
             $contadorLetrasAux = 0;
         }
-
-
-        
-
     }
-
-
-    detallesFrase("Hola que tal")
-
-?>
+    detallesFrase("Hola que tal");
