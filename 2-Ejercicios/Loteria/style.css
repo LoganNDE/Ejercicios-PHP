@@ -1,0 +1,30 @@
+.imgPrimitiva{
+    max-width: 272px !important;
+}
+
+.imgEuroM{
+    max-width:  304px !important;
+}
+
+
+.numStyle{
+    width: 50px !important;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(67, 253, 151);
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    border: solid 1px black ;
+}
+
+.estrellaStyle {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow"><path d="M12 .587l3.668 7.568L24 9.423l-6 5.849 1.42 8.293L12 18.897l-7.42 4.668L6 15.272 0 9.423l8.332-1.268z"/></svg>') no-repeat center;
+    background-size: contain;
+    text-align: center;
+    line-height: 50px;
+}
+
