@@ -1,4 +1,4 @@
-<?php include("primitiva.php") ?>
+<?php include("loteria.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +16,9 @@
         <table class="table table-bordered">
             <tr>
                 <?php
-                    foreach ($listaNumerosGenerados as $numeros) {
+
+                    
+                    foreach (generarResultado(6, 49) as $numeros) {
                         echo "<td class='align-middle text-center'> <span class= 'numStyle text-center'>". $numeros .  " </span> </td>";
                     }
                 ?>

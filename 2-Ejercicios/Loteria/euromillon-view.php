@@ -1,4 +1,4 @@
-<?php include("euromillon.php") ?>
+<?php include("loteria.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +16,10 @@
         <table class="table table-bordered">
             <tr>
                 <?php
-                    foreach ($listaNumerosGenerados as $numeros) {
+                    foreach (generarResultado(5, 50) as $numeros) {
                         echo "<td class='align-middle text-center'> <span class= 'numStyle text-center'>". $numeros .  " </span> </td>";
                     }
-                    foreach ($listaEstrellas as $numerosEstrella) {
+                    foreach (generarResultado(2, 9) as $numerosEstrella) {
                         echo "<td class='align-middle text-center'> <span class= 'estrellaStyle text-center'>". $numerosEstrella .  " </span> </td>";
                     }
 
