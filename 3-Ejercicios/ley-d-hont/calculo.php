@@ -8,39 +8,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['nombrePartido'], $_PO
 
     $combinacionPartidos = array_combine($nombrePartido, $numVotos);
 
-    print_r($combinacionPartidos);
-
-    echo "<br>";
-
-    if (is_int($numeroEscanyos)){
-        $totalEscanyos = [];
-        foreach ($combinacionPartidos as $key => $votos){
-            echo "<br>" . $key . " " ;
-            for ($contador = 1; $numeroEscanyos >= $contador; $contador++){
-                $escanyo = round($votos / $contador);
-                array_push($totalEscanyos, $escanyo);
-                echo $escanyo . ", ";
-                //echo "Escanyo " . $contador;
+        if (is_int($numeroEscanyos)){
+            $totalEscanyos = [];
+            foreach ($combinacionPartidos as $key => $votos){
+                $escaniosPartido = [];
+                for ($contador = 1; $numeroEscanyos >= $contador; $contador++){
+                    $escanyo = round($votos / $contador);
+                    array_push($escaniosPartido, $escanyo);
+                    $totalEscanyos[$key] = $escaniosPartido;
+                }
             }
-        
         }
 
-        echo "<br>";
-        arsort($totalEscanyos);
-
-        $listaNumeroMayores = array_splice($totalEscanyos,0 ,7);
-
-        print_r($listaNumeroMayores);
-
-        /*foreach ($combinacionPartidos as $key => $votos){
-            if ()
+        $copiaTotalEscanyos = [];
+        foreach ($totalEscanyos as $key => $escanios){
+            foreach ($escanios as $escanyo) {
+                array_push($copiaTotalEscanyos, $escanyo); // Agrega cada escaño individualmente
+            }
         }
-        */
 
-            
-    }
-    
-
+        arsort($copiaTotalEscanyos);
+        $listaNumeroMayores = array_splice($copiaTotalEscanyos,0 ,7);
 
 
     }else{
