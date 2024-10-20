@@ -14,11 +14,9 @@
 
     .wrapper{
         height: 100vh;
-        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .articulos{
@@ -95,10 +93,101 @@
         border-radius: 100px;
     }
 
+    .iconosHeader{
+        position: relative;
+    }
+
     .iconoCarro{
         content: url("https://www.svgrepo.com/show/507858/shopping-cart.svg");
         width: 35px;
         height: 35px;
         display: inline-block;
     }
+    
+    .numProductos{
+        font-size: 13px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffa41c;
+        border-radius: 100px;
+        height: 20px;
+        width: 20px;
+        top:-20px;
+        right: -5px;
+    }
+
+    .iconoSalir{
+        content: url("https://www.svgrepo.com/show/498152/logout.svg");
+        margin-right: 20px;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+    }
+
+
+    .tablaCarrito {
+        width: 1200px;
+     }
+
+     .tablaCarrito {
+         border: solid 1px black;
+         border-collapse: collapse;
+     }
+
+     .ColumnaTCarro {
+         border: solid 1px black;
+         width: 200px;
+         text-align: center;
+         font-family: "Bebas Neue", sans-serif;
+         font-size: 24px;
+     }
+
+     .fotoCarro {
+         width: 38%;
+     }
+
+     .cabeceraTabla{
+        text-align: center;
+     }
+
+     .cabeceraTabla tr td{
+        padding: 6px 0px; 
+        font-size: 24px;
+     }
+
+
+
+     .containerPrecioTotal{
+        padding: 10px 0px 40px 0px;
+        width: 1200px;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 30px;
+     }
+
+     .containerPrecioTotal h2{
+         font-size: 32px;
+     }
+
+     .precioTotal{
+        font-family: "Bebas Neue", sans-serif;
+     }
+
+     a:link{
+        color: black;
+        text-decoration: none;
+     }
+
+     a:visited{
+        color: black;
+        text-decoration: none;
+     }
+
+
+
 

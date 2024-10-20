@@ -12,11 +12,7 @@
 <body>
     <div class="wrapper">
         <header class="cabecera">
-            <h1>Pepe's Shop</h1>
-            <div>
-            <span><?php echo count($_SESSION['carroTotal'])?></span>
-            <a href="carro-view.php"><span class="iconoCarro"></span></a>
-            </div>
+            <?php include("modules/header.php") ?>
         </header>
         
         <div class="articulos">
