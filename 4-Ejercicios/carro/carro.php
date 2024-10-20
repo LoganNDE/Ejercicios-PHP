@@ -1,3 +1,4 @@
+<?php include("articulos.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +10,10 @@
     
     <?php
         session_start();
-        $articulos = array(
-            array("id" => 1, "nombre" => "Zapatillas Nike", "precio" => 60),
-            array("id" => 2, "nombre" => "Sudadera Domyos", "precio" => 15),
-            array("id" => 3, "nombre" => "Pala de pádel Vairo", "precio" => 50),
-            array("id" => 4, "nombre" => "Pelota de baloncesto Molten", "precio"
-            => 20)
-            );
-
-        
         if (($_SERVER['REQUEST_METHOD'] === 'GET') && (isset($_GET['name']))){
             
-            echo $_GET['name'];
-        if (!isset($_SESSION['carroTotal']) && !isset($_SESSION['precioTotal'])){
-                $_SESSION['carroTotal'] = [];
-                $_SESSION['precioTotal'] = 0;    
+            if (!isset($_SESSION['carroTotal'])){
+                    $_SESSION['carroTotal'] = [];
             }
 
             //SUMA DE LOS PRECIOS DE ARTICULOS
@@ -32,27 +22,40 @@
                     array_push($_SESSION['carroTotal'], $articulo) ;
                     $_SESSION['precioTotal'] += $articulo['precio'];
                 }
-            }
-
-            print_r($_SESSION['carroTotal']);
-        
+            } 
         }
-            echo "<br>". $_SESSION['precioTotal'];
 
     ?>    
 
 
     <div class="wrapper">
+        <div class="articulos">
+            <ul>
+                <?php
+                    //MOSTRAR ARTICULOS
+                    foreach ($articulos as $values){
+                        echo "<a href='carro.php?name=" . $values['id'] . "'><li>" . $values['nombre'] . " " . $values['precio'] . "</li></a>";
+                    }
+                ?>
+            </ul>
+        </div>
 
-        <ul>
-            <?php
-                foreach ($articulos as $values){
-                    echo "<a href='carro.php?name=" . $values['id'] . "'><li>" . $values['nombre'] . " " . $values['precio'] . "</li></a>";
-                }
+        <div class="carrito">
+            <ul>
+                <?php
+                    $precioTotal = 0;
+                    //MOSTRAR CARRITO
+                    foreach ($_SESSION['carroTotal'] as $articulo){
+                        echo "<li>" . $articulo['nombre'] . " -> ". $articulo['precio'] . "</li>";
+                        $precioTotal += $articulo['precio'];
+                    }
+                    echo $precioTotal;
 
-        ?>
+                ?>
+            </ul>
+        </div>
 
-        </ul>
+        
     </div>
 
 
