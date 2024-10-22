@@ -3,6 +3,6 @@
 
 Crea un archivo PHP en el que definas dos variables (nombre y año de nacimiento) y muestres la información: "Me llamo XXXX y nací en el año YYYY".
 
-![1️⃣ Información Básica](ruta/a/la/imagen_informacion_basica.jpg)
+![imagen](https://github.com/user-attachments/assets/bff752d4-0b50-4a09-a4b6-88e850b20ff9)
 
 [Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/1-Ejercicios/informacionBásica/info_basica.php)
