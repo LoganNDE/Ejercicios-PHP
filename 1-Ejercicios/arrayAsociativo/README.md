@@ -1,3 +1,4 @@
+[Volver al inicio](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/1-Ejercicios/#readme)
 # 🔟 Array Asociativo
 
 Crea un archivo PHP que rellene un array con 100 elementos aleatorios de "M" o "F", y luego muestre cuántos hay de cada uno usando un array asociativo.
