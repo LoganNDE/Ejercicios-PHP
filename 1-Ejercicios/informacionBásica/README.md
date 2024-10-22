@@ -5,4 +5,4 @@ Crea un archivo PHP en el que definas dos variables (nombre y año de nacimiento
 
 ![1️⃣ Información Básica](ruta/a/la/imagen_informacion_basica.jpg)
 
-[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/1-Ejercicios/informacionBasica/info_basica.php)
+[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/1-Ejercicios/informacionBásica/info_basica.php)
