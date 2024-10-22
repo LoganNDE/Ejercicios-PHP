@@ -72,7 +72,7 @@
     $titulos = ["Técnico en sistemas microinformáticos y redes", "otro"];
     $anyoNacimiento = 2004;
     $descripcion = "Lorem ipsum dolor sit, soluta debitis? Id dicta dolore tempore sint, consequatur assumenda ut modi alias ab ex dignissimos temporibus ducimus nulla aliquam molestiae unde distinctio quis. Repudiandae cumque sit voluptates ipsum earum libero impedit porro error. Facere minus accusamus dolorem sed, quaerat veritatis ex rerum? Rem maiores temporibus impedit accusamus.";
-    $estudios = ["E.S.O | Edudacion Secundaria Obligatoria", "Grado Medio | Sistemas microinformáticos y redes", "Grado Superior | Desarrolo de aplicaciones web"]
+    $estudios = ["E.S.O | Edudación Secundaria Obligatoria", "Grado Medio | Sistemas microinformáticos y redes", "Grado Superior | Desarrolo de aplicaciones web"]
     ?>
 
     <div class="main">
