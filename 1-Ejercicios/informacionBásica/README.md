@@ -1,4 +1,4 @@
-[Volver al inicio](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/1-Ejercicios/)
+[Volver al inicio](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/1-Ejercicios/#readme)
 # 1️⃣ Información Básica
 
 Crea un archivo PHP en el que definas dos variables (nombre y año de nacimiento) y muestres la información: "Me llamo XXXX y nací en el año YYYY".
