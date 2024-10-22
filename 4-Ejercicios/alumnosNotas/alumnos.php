@@ -9,14 +9,15 @@
         }
 
         $nombreAlumno = $_REQUEST['nombre'] ? $_REQUEST['nombre'] : null;
-        $notas = $_REQUEST['notas'] ? $_REQUEST['nota'] : [];
+        $notas = $_REQUEST['notas'] ? $_REQUEST['notas'] : [];
+        $media = (array_sum($notas)/count($notas));
         
-        if (($nombreAlumno != null && $notas != []) || ($notas != [])){
-            $alumnosList = ['nombre' => $nombreAlumno, 'notas' => $notas];
+        if (($nombreAlumno != null && $notas !== [] && $media != 0)){
+            $alumnosList = ['nombre' => $nombreAlumno, 'notas' => $notas, 'media' => $media];
             array_push($_SESSION['alumnos'], $alumnosList);
-            header("Location: agregarAlumnos-view.php");    
+            header("Location: agregarAlumnos-view.php");
         }else{
-            header("Location: agregarAlumnos-view.php");    
+            header("Location: agregarAlumnos-view.php");
         }
         
     }

@@ -20,10 +20,11 @@
 
         form {
             background-color: #fff;
-            padding: 20px;
+            padding: 40px 40px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            width: 400px;
+            margin-right: 10px;
         }
 
         label {
@@ -50,6 +51,7 @@
             border-radius: 5px;
             cursor: pointer;
             width: 100%;
+            margin-bottom: 10px;
         }
 
         button:hover {
@@ -61,6 +63,8 @@
             width: 100%;
             margin-top: 20px;
             border-collapse: collapse;
+            margin-left: 10px;
+
         }
 
         th, td {
@@ -107,13 +111,14 @@
         <input type="number" name="notas[]" id="nota3" placeholder="Nota 3">
 
         <button type="submit">Enviar</button>
+        <a href="borrarAlumnos.php">Borrar alumnos</a>
     </form>
 
     <?php
-        if (isset($_SESSION['alumnos'])) {
+        if (isset($_SESSION['alumnos']) && $_SESSION['alumnos'] != []) {
             echo '<div class="table-container">';
             echo '<table>';
-            echo '<tr><th>Nombre</th><th>Nota 1</th><th>Nota 2</th><th>Nota 3</th></tr>';
+            echo '<tr><th>Nombre</th><th>Nota 1</th><th>Nota 2</th><th>Nota 3</th><th>Media</th></tr>';
 
             foreach ($_SESSION['alumnos'] as $alumno) {
                 echo '<tr>';
@@ -121,6 +126,7 @@
                 foreach ($alumno['notas'] as $nota) {
                     echo '<td>' . $nota . '</td>';
                 }
+                echo '<td>' . $alumno['media'] . '</td>';
                 echo '</tr>';
             }
 
