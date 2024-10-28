@@ -26,7 +26,7 @@
     .container{
         border: 3px solid black;
         border-radius: 5px;
-        height: 80vh;
+        height: 40vh;
         width: 30%;
         display: flex;
         flex-direction: column;
@@ -69,10 +69,10 @@
 
     $nombre = "Logan";
     $apellidos = "Naranjo Rodriguez";
-    $titulos = ["Tecnico en sistemas microinformáticos y redes", "otro"];
+    $titulos = ["Técnico en sistemas microinformáticos y redes", "otro"];
     $anyoNacimiento = 2004;
     $descripcion = "Lorem ipsum dolor sit, soluta debitis? Id dicta dolore tempore sint, consequatur assumenda ut modi alias ab ex dignissimos temporibus ducimus nulla aliquam molestiae unde distinctio quis. Repudiandae cumque sit voluptates ipsum earum libero impedit porro error. Facere minus accusamus dolorem sed, quaerat veritatis ex rerum? Rem maiores temporibus impedit accusamus.";
-    $estudios = ["E.S.O | Edudacion Secundaria Obligatoria", "Grado Medio | Sistemas microinformáticos y redes", "Grado Superior | Desarrolo de aplicaciones web"]
+    $estudios = ["E.S.O | Edudación Secundaria Obligatoria", "Grado Medio | Sistemas microinformáticos y redes", "Grado Superior | Desarrolo de aplicaciones web"]
     ?>
 
     <div class="main">
@@ -80,7 +80,7 @@
         <h1><?php print ($nombre . " " . $apellidos)?></h1>
         <h2 class="estudios"><?php print ($titulos[0])?></h2>
         <hr>
-        <p class="secciones">Sobre mi</p> 
+        <p class="secciones">Sobre mí</p> 
         <p class="informacion"><?php echo $descripcion ?></p>
         <p class="secciones">Estudios</p>
         <ul>

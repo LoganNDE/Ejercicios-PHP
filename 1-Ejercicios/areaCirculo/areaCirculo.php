@@ -21,7 +21,7 @@
         .container{
         border: 3px solid black;
         border-radius: 5px;
-        height:40vh;
+        height:30vh;
         width: 30%;
         display: flex;
         flex-direction: column;

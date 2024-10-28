@@ -26,7 +26,7 @@
         .container1{
             padding: 10px;
             width: 35vw;
-            height: 45vh;
+            height: 10vh;
             border: solid 1px black;
             border-radius: 5px;
             white-space: normal; /* Permitir que el texto se ajuste al ancho del contenedor */
@@ -40,7 +40,7 @@
             text-align: center;
             padding: 10px;
             width: 35vw;
-            height: 10vh;
+            height: 5vh;
             border: solid 1px black;
             border-radius: 5px;
             white-space: normal; /* Permitir que el texto se ajuste al ancho del contenedor */

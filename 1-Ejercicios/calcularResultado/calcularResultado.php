@@ -19,7 +19,8 @@
         .container{
         border: 3px solid black;
         border-radius: 5px;
-        height:40vh;
+        padding: 20px;
+        height:15vh;
         width: 30%;
         display: flex;
         flex-direction: column;
