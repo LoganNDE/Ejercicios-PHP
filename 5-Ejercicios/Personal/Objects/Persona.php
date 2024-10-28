@@ -13,7 +13,7 @@
             $this->setEmail($email);
         }
 
-        private function setDni(string $dni){
+        public function setDni(string $dni){
             if (strlen($dni) != 9){
                 throw new Exception("El DNI intruducido no es correcto");
             }else{
@@ -22,7 +22,7 @@
         }
 
         
-        private function setNombre(string $name){
+        public function setNombre(string $name){
             if (strlen($name) < 1 || strlen($name) > 60){
                 throw new Exception("El nombre intruducido no es correcto");
             }else{
@@ -31,7 +31,7 @@
         }
 
         
-        private function setEmail(string $email){
+        public function setEmail(string $email){
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
                 throw new Exception("El email intruducido no es correcto");
             }else{
