@@ -1,4 +1,4 @@
-<?php include("11-plantilla.php"); ?>
+<?php include("plantilla.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
