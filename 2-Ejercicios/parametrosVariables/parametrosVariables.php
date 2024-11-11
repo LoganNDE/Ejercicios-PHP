@@ -6,34 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    
-
-
 
 <?php
-    $arrayNumeros = [];
-    comprobarMayor(1,8,4,23,3,4,5,6,87,90,12,23,56,2);
+    $arrayNumeros = [1, 8, 4, 23, 3, 4, 5, 6, 87, 90, 12, 23, 56, 2];
+    $mayorNumero = comprobarMayor(...$arrayNumeros);
 
     function comprobarMayor(...$numeros){
-        $mayortemp = 0;
-        $arrayNumeros = func_get_args();
-        for($i = 0; $i < count($arrayNumeros); $i++) {
-            
-            if ($arrayNumeros[$i] > $mayortemp){
-                $mayortemp = $arrayNumeros[$i];
+        $mayorTemp = $numeros[0];
+        for($i = 1; $i < count($numeros); $i++) {
+            if ($numeros[$i] > $mayorTemp){
+                $mayorTemp = $numeros[$i];
             }
         }
-
-        $mayortemp;
+        return $mayorTemp;
     }
-
-
 ?>
 
-
-    <h1>Comprobacion de numero mayor</h1>
-    <h2>El array a comprobar es: <?php print_r($arrayNumeros)?> </h2>
-
+<h1>Comprobación de número mayor</h1>
+<h2>El array a comprobar es: <?php echo implode(", ", $arrayNumeros); ?> </h2>
+<h2>El número mayor es: <?php echo $mayorNumero; ?></h2>
 
 </body>
 </html>
