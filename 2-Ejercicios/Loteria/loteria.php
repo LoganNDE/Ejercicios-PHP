@@ -13,14 +13,3 @@
         asort($listaNumerosGenerados);
         return $listaNumerosGenerados;
     }
-
-    //$listaNumerosGenerados = [...generarResultado()];
-
-
-    /*  if (isset($_POST)){
-            generarResultado();
-    }
-
-    */
-
-    
