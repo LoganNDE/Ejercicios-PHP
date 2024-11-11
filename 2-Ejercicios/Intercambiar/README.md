@@ -5,4 +5,4 @@ Crea una función llamada `intercambia` que reciba dos parámetros numéricos po
 
 ![imagen](RUTA_DE_IMAGEN)
 
-[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/Intercambiar/intercambiar.php)
+[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/Intercambiar/intercambia.php)

@@ -5,4 +5,5 @@ Lee una frase y devuelve una nueva con solo los caracteres en las posiciones imp
 
 ![imagen](RUTA_DE_IMAGEN)
 
-[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/FraseImpares/fraseImpares.php)
+[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/FraseImpares/fraseImpar.php)
+[Ver código (Vista)](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/FraseImpares/fraseImpar_view.php)

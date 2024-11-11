@@ -5,4 +5,5 @@ Usa el archivo `plantillas.csv` para mostrar una tabla HTML con su contenido, in
 
 ![imagen](RUTA_DE_IMAGEN)
 
-[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/Plantilla/plantillas.php)
+[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/Plantilla/plantilla.php)
+[Ver código (Vista)](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/Plantilla/plantilla_view.php)

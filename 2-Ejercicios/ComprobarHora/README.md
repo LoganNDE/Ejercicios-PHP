@@ -5,4 +5,4 @@ Crea una variable de texto con una hora (por ejemplo, “21:30:12”) y luego pr
 
 ![imagen](RUTA_DE_IMAGEN)
 
-[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/ComprobarHora/comprueba_hora.php)
+[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/ComprobarHora/comprobar_hora.php)

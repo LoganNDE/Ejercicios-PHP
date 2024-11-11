@@ -5,4 +5,5 @@ Crea un programa que cargue datos de un archivo CSV de casas rurales en Castell�
 
 ![imagen](RUTA_DE_IMAGEN)
 
-[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/CasasRurales/casasRuralesTelefonos.php)
+[Ver código](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/CasasRurales/casasRurales.php)
+[Ver código (Vista)](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/CasasRurales/casasRurales-view.php)
