@@ -1,10 +1,22 @@
+<?php
+    $mode = $_REQUEST['mode'] ?? 'add';
+    if ($mode === 'edit'){
+        include ("../update.php");
+        $path = '../update.php';
+        $idEdit = $_REQUEST['id'];
+        print_r(getData($idEdit));
+    }else{
+        $path = '../addTaskC.php';
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Tarea</title>
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -13,7 +25,7 @@
             <div class="containerNewTask">
                 <div class="newTaskSection">
                     <h2>Indique los datos necesarios para registrar su tarea</h2>
-                    <form action="addTask.php" method="post" class="formNewTask grid-container">
+                    <form action= <?php echo $path?> method="post" class="formNewTask grid-container">
                         <div class="section-grid-1 col">
                             <label for="nameTask">Nombre de la tarea</label>
                             <input type="text" id="nameTask" name="nameTask" class="inputStyle mb" placeholder="Practicar JavaScript">
@@ -38,12 +50,17 @@
                         </div>
 
                         <div class="section-grid-4">
-                            <button type="submit" class="btn btnAdd">Agregar tarea</button>
-                            <button type="button" class="btn btnEdit hide">Actualizar tarea</button>
+                            <?php
+                                if ($mode === 'edit'){
+                                    echo '<button type="submit" class="btn btnAdd">Actualizar tarea</button>';
+                                }else{
+                                    echo '<button type="submit" class="btn btnAdd">Agregar tarea</button>';
+                                }
+                            ?>                            
                         </div>
 
                         <div class="section-grid-5">
-                            <button type="button" class="btn btnCancel">Cancelar</button>
+                            <button type="button" class="btn btnCancel" onclick="window.location='../index.php'">Cancelar</button>
                         </div>
                     </form>
                 </div>
