@@ -1,4 +1,6 @@
 <?php
+    header("Refresh:5; url=index.html");    
+
     $nameFile = $_FILES['formFile']['name'];
     $destinationPath = __DIR__ . "/imagenes";
 
@@ -16,12 +18,15 @@
                 $nombre = $_FILES['formFile']['name'];
                 move_uploaded_file($_FILES['formFile']['tmp_name'], "$destinationPath/{$nombre}");
                 echo "<p>Archivo $nombre subido con éxito</p>";
+                echo "Redireccionando al inicio en 5 segundos.";
                 }
         }else{
-            echo "<br>Archivo invalido. Recuerde, los formatod admitidos son [SVG, PNG, JPG, JPEG]";
+            echo "<br>Archivo invalido. Recuerde, los formatod admitidos son [SVG, PNG, JPG, JPEG] <br>";
+            echo "Redireccionando al inicio en 5 segundos.";
         }
     }else{
-        echo "Solicitid no recibida. Vuelva subir su archivo.";
+        echo "Solicitid no recibida. Vuelva subir su archivo. <br>";
+        echo "Redireccionando al inicio en 5 segundos.";
     }
 
 ?>
