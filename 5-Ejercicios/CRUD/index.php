@@ -25,7 +25,7 @@
                             echo "<td>" . "Titulo" . "</td>";
                             echo "<td>" . "Descripción" . "</td>";
                             echo "<td>" . "Prioridad" . "</td>";
-                            echo "<td>" . "Estatus" . "</td>";
+                            echo "<td>" . "Estado" . "</td>";
                             echo "<td>" . "Acción" . "</td>";
                             echo "</thead>";
                             foreach ($data as $register){
@@ -34,7 +34,7 @@
                                 echo "<td>" . $register['description'] . "</td>";
                                 echo "<td>" . $register['priority'] . "</td>";
                                 echo "<td>" . $register['status_task'] . "</td>";
-                                echo "<td>" . "<span class='btnAcction'>" . '<a href=delete.php?id='.$register['id'] .'>' . '<i class="fa-solid fa-trash" id="btnRemove"></i></a>' . "</span>" . "<span class='btnAcction'>" . '<a href=view/addTask.php?id='.$register['id'].'&mode=edit' . '>' . '<i class="fa-solid fa-pen" id="btnEdit"></i></a>'. "</span>". "</td>";
+                                echo "<td><span class='btnAcction'><a href='delete.php?id=".$register['id']."' onclick=\"return confirm('¿Estás seguro de que deseas eliminar este elemento?')\"><i class='fa-solid fa-trash' id='btnRemove'></i></a></span><span class='btnAcction'><a href='view/addTask.php?id=".$register['id']."&mode=edit' onclick=\"return confirm('¿Estás seguro de que deseas editar este elemento?')\"><i class='fa-solid fa-pen' id='btnEdit'></i></a></span></td>";
                                 echo "</tr>";
                             }
                             echo "</table>";
