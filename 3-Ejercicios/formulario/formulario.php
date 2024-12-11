@@ -20,7 +20,6 @@
     } elseif (empty($numberMembers)) {
         $numberMembers = "N/A";
     }
-
 ?>
 
 
