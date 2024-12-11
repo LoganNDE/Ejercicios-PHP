@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: #F5EBDC;
+}
+
+
+h1{
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #502314;
+    text-align: center;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.app{
+    margin-top: 10vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.gridParent{
+    margin-top: 4vh;
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    gap: 30px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #502314;
+}
+
+a:link{
+    text-decoration: none;
+    color: #502314;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #502314;
+}
+
+.grid{
+    position: relative;
+    padding-top: 10px;
+    border-radius: 6px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #f5f1ec;
+    transition: transform 0.3s;
+}
+
+.grid:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.imgCategories{
+    width: 200px;
+    height: 130px;
+}
+
+.editBtn{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    color: white;
+    position: absolute;
+    border: 1px solid #502314;
+    top: -20px;
+    right: -10px;
+    border-radius: 20px;
+}
+
+.closeSessionBtn{
+    background-color: rgb(255, 74, 74);
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 15px;
+    color: white !important;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.titleBox{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f1ec;
+    height: 40px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+h2{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #502314;
+}
+
+h3{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #502314;
+}
+
+.btnHome{
+    margin-top: 35px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #502314;
+    color: #f5f1ec !important;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+}
