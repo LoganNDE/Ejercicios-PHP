@@ -19,6 +19,18 @@ class BurgerController {
     }
 
 
+    public function editCategroies($id){
+        if  ($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $name = $_REQUEST['name'];
+            $this->burgerModel->editCategoriesById($id, $name);
+            header("Location: index.php");
+            exit();
+        }
+        $categories = $this->burgerModel->getByIdCategories($id);
+        require("admin/View/editCategories.php");
+    }
+
+
     
 
     /*public function create() {

@@ -19,7 +19,7 @@
                 <?php foreach($categories as $categorie): ?>
                     <div class="grid">
                         <?php if($_SESSION['user'] === 'admin'): ?>
-                            <a class="editBtn" href="dsadadsa.php"><i class="fa-solid fa-pen"></i></a>
+                            <a class="editBtn" href="index.php?action=editCategorie&id=<?php echo $categorie['id']?>"><i class="fa-solid fa-pen"></i></a>
                         <?php endif?>
                         <a href="index.php?id=<?php echo $categorie['id']?>&action=products">
                         <img class="imgCategories" src="src/img/categories/<?= $categorie['image'] ?>" alt="<?= $categorie['name'] ?>">

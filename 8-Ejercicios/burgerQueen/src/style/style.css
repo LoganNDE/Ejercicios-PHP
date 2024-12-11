@@ -140,3 +140,31 @@ h3{
     font-family: "Fredoka", sans-serif;
     font-weight: 600;
 }
+
+.formEditCategories{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.671);
+    border: 1px solid #502314;
+    border-radius: 20px;
+    padding: 30px 180px;
+}
+
+.titleEdit{
+    margin-bottom: 5vh;
+}
+
+
+.inputText{
+    font-family: "Fredoka", sans-serif;
+    width: 300px;
+    padding: 10px 10px 10px 5px;
+    height: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid #502314;
+}
+
+.categoryName{
+    color: #b17b68;
+}

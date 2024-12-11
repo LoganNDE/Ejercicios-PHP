@@ -46,8 +46,9 @@ class BurgerModel {
 
     public function getByIdCategories($id){
         try{
-            $query = "SELECT * FROM items WHERE id = $id";
+            $query = "SELECT * FROM categories WHERE id = :id";
             $registro = $this->pdo->prepare($query);
+            $registro ->bindParam(':id', $id);
             $registro->execute();
             return $registro->fetch();
         }catch (PDOException $e) {
