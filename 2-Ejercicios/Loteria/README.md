@@ -20,4 +20,4 @@ Genera una apuesta aleatoria de la Primitiva o Euromillones con los números y e
 
 [Ver código (Primitiva-View)](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/Loteria/primitiva-view.php)
 
-[Ver código (CSS)](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/Loteria/style.css) 
+[Ver código (CSS)](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/2-Ejercicios/Loteria/style.css)
