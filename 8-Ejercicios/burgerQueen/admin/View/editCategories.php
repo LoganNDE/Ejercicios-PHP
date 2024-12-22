@@ -1,8 +1,3 @@
-<?php
-    
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,14 +10,16 @@
     <div class="wrapper">
         <div class="app">
             <h1 class="titleEdit">Actualmente estas modificando la categoria <br> <span class="categoryName"><?= $categories['name'] ?></span></h1>
-            <form class="formEditCategories" method="POST" action="index.php?action=editCategorie&id=<?= $categories['id'] ?>">
+            <form class="formEditCategories" enctype="multipart/form-data" method="POST" action="index.php?action=editCategorie&id=<?= $categories['id'] ?>">
                 <label for="name">Nombre </label>
                 <input class="inputText" type="text" name="name" value= "<?= $categories['name'] ?>">
                 <input type="file" name="image">
-                <img class="imgCategories" src="src/img/categories/<?= $categories['image']?>" alt="">
+                <div class="imageContainer">
+                    <img class="imgCategories" src="src/img/categories/<?= $categories['image']?>" alt="">
+                </div>
                 <div class="formButtons">
-                    <button class="btnForm submit" type="submit">Actualizar</button>
-                    <a class="btnForm cancel" href="index.php">Cancelar</a>
+                    <button class="btnForm btnSubmit" type="submit">Actualizar</button>
+                    <a class="btnForm btnCancel" href="index.php">Cancelar</a>
                 </div>
             </form>
         </div>

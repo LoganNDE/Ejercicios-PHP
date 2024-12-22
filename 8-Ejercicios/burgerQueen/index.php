@@ -9,7 +9,6 @@ $_SESSION['user'] = isset($_SESSION['user']) ? $_SESSION['user'] : "user";
     $action = isset($_GET['action']) ? $_GET['action'] : 'home';
     $id = isset($_GET['id']) ? $_GET['id'] : null;
 
-
     switch ($action) {
         case 'home':
             $controller->indexCategories();
@@ -19,4 +18,8 @@ $_SESSION['user'] = isset($_SESSION['user']) ? $_SESSION['user'] : "user";
             break;
         case 'editCategorie':
             $controller->editCategroies($id);
+            break;
+        case 'editItem':
+            $controller->editItems($id);
+            break;
     }

@@ -144,16 +144,27 @@ h3{
 .formEditCategories{
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.671);
+    background-color: rgba(255, 255, 255, 0.301);
     border: 1px solid #502314;
     border-radius: 20px;
     padding: 30px 180px;
+    gap: 20px;
 }
 
 .titleEdit{
     margin-bottom: 5vh;
 }
 
+label{
+    margin-bottom: -15px;
+    font-family: "Fredoka", sans-serif;
+}
+
+.imageContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .inputText{
     font-family: "Fredoka", sans-serif;
@@ -167,4 +178,33 @@ h3{
 
 .categoryName{
     color: #b17b68;
+}
+
+
+.btnForm{
+    padding: 6px 45px;
+    border: 1px solid #502314;
+    border-radius: 10px;
+    font-family: "Fredoka", sans-serif;
+}
+
+.formButtons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btnCancel{
+    background-color: rgb(196, 85, 85);
+    color: rgb(44, 44, 44) !important;
+}
+
+.btnSubmit{
+    background-color: wheat;
+    color: rgb(44, 44, 44);
+}
+
+.btnSubmit:hover{
+    cursor: pointer;
 }

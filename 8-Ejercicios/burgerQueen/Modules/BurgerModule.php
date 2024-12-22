@@ -56,6 +56,18 @@ class BurgerModel {
         }
     }
 
+    public function getByIdItems($id){
+        try{
+            $query = "SELECT * FROM items WHERE id = :id";
+            $registro = $this->pdo->prepare($query);
+            $registro ->bindParam(':id', $id);
+            $registro->execute();
+            return $registro->fetch();
+        }catch (PDOException $e) {
+            die($e->getMessage());
+        }
+    }
+
     public function deleteByIdItems($id){
         try{
             $insercion = $this->pdo->prepare("delete from items where id=:id");
@@ -79,12 +91,11 @@ class BurgerModel {
 
     public function editItemsById($id,$name,$description,$price,$category): bool{
         try{
-            $insercion = $this->pdo->prepare("update items set name=:name, description=:description, price=:price, image=:image, category=:category where id=:id");
+            $insercion = $this->pdo->prepare("update items set name=:name, description=:description, price=:price, category=:category where id=:id");
             $insercion->bindParam(':id', $id);
             $insercion->bindParam(':name', $name);
             $insercion->bindParam(':description', $description);
             $insercion->bindParam(':price', $price);
-            $insercion->bindParam(':image', $image);
             $insercion->bindParam(':category', $category);
             return $insercion->execute();;
         }catch (PDOException $e){

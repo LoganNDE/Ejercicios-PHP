@@ -30,6 +30,27 @@ class BurgerController {
         require("admin/View/editCategories.php");
     }
 
+    public function editItems($id){
+        if  ($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $name = $_REQUEST['name'];
+            $description = $_REQUEST['description'];
+            $price = $_REQUEST['price'];
+            $category = $_REQUEST['category'];
+
+            if (is_uploaded_file($_FILES['image']['tmp_name'])) {
+                // subido con éxito
+                $nombreFile = $_FILES['image']['name'];
+                move_uploaded_file($_FILES['image']['tmp_name'], "src/img/uploads/{$nombreFile}");
+            }
+
+            $this->burgerModel->editItemsById($id,$name,$description,$price,$category, $nombreFile);
+            header("Location: index.php?action=products&id=" . $category);
+            exit();
+        }
+        $items = $this->burgerModel->getByIdItems($id);
+        require("admin/View/editItems.php");
+    }
+
 
     
 
