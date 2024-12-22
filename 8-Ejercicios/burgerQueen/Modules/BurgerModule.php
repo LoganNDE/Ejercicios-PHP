@@ -89,25 +89,27 @@ class BurgerModel {
         }
     }
 
-    public function editItemsById($id,$name,$description,$price,$category): bool{
+    public function editItemsById($id,$name,$description,$price,$category, $image): bool{
         try{
-            $insercion = $this->pdo->prepare("update items set name=:name, description=:description, price=:price, category=:category where id=:id");
+            $insercion = $this->pdo->prepare("update items set name=:name, description=:description, price=:price, category=:category, image=:image where id=:id");
             $insercion->bindParam(':id', $id);
             $insercion->bindParam(':name', $name);
             $insercion->bindParam(':description', $description);
             $insercion->bindParam(':price', $price);
             $insercion->bindParam(':category', $category);
+            $insercion->bindParam(':image', $image);
             return $insercion->execute();;
         }catch (PDOException $e){
             die($e->getMessage());
         }
     }
 
-    public function editCategoriesById($id,$name): bool{
+    public function editCategoriesById($id,$name, $image): bool{
         try{
-            $insercion = $this->pdo->prepare("update categories set name=:name where id=:id");
+            $insercion = $this->pdo->prepare("update categories set name=:name, image=:image where id=:id");
             $insercion->bindParam(':id', $id);
             $insercion->bindParam(':name', $name);
+            $insercion->bindParam(':image', $image);
             return $insercion->execute();;
         }catch (PDOException $e){
             die($e->getMessage());

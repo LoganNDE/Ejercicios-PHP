@@ -7,14 +7,24 @@ $_SESSION['user'] = isset($_SESSION['user']) ? $_SESSION['user'] : "user";
     $controller = new BurgerController();
 
     $action = isset($_GET['action']) ? $_GET['action'] : 'home';
+    $mode = isset($_GET['mode']) && $_GET['mode'] == "edit" ? $_GET['mode'] : "delete";
     $id = isset($_GET['id']) ? $_GET['id'] : null;
+
+
+    if ($mode == "edit"){
+        $mode = "delete";
+    }else{
+        $mode = "edit";
+    }
+
+
 
     switch ($action) {
         case 'home':
-            $controller->indexCategories();
+            $controller->indexCategories($mode);
             break;
         case 'products';
-            $controller->indexItems($id);
+            $controller->indexItems($id, $mode);
             break;
         case 'editCategorie':
             $controller->editCategroies($id);

@@ -10,7 +10,7 @@
     <div class="wrapper">
         <div class="app">
             <h1 class="titleEdit">Actualmente estas modificando el producto <br> <span class="categoryName"><?= $items['name'] ?></span></h1>
-            <form class="formEditCategories" method="POST" action="index.php?action=editItem&id=<?= $items['id'] ?>">
+            <form class="formEditCategories" method="POST" enctype="multipart/form-data" action="index.php?action=editItem&id=<?= $items['id'] ?>">
                 <label for="name">Nombre </label>
                 <input class="inputText" type="text" name="name" value= "<?= $items['name'] ?>">
                 <label for="name">Precio </label>
