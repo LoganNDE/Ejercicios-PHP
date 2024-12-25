@@ -14,8 +14,7 @@
             <h1>Hola Logan, ¿que quieres comer hoy?</h1>
             <?php if($_SESSION['user'] === 'admin'): ?>
                 <a class="closeSessionBtn" href="admin/closeSession.php">Cerrar Sesión</a>
-                <a href="index.php?mode=<?= $mode ?>">Modo <?= $mode ?>
-            </a>
+                <a class="changeModeBtn" href="index.php?mode=<?= $mode ?>">Modo <?= $mode ?></a>
             <?php endif?>
             <div class="gridParent">
                 <?php foreach($categories as $categorie): ?>
@@ -24,7 +23,7 @@
                             <?php if($mode === 'edit'): ?>
                             <a class="btnMode" href="index.php?action=editCategorie&id=<?php echo $categorie['id']?>"><i class="fa-solid fa-pen"></i></a>
                             <?php else:?>
-                            <a class="btnMode" href="index.php?action=editCategorie&id=<?php echo $categorie['id']?>"><i class="fa-solid fa-trash"></i></a>
+                            <a class="btnMode" href="index.php?action=removeCategorie&id=<?php echo $categorie['id']?>"><i class="fa-solid fa-trash"></i></a>
                             <?php endif?>
                         <?php endif?>
                         <a href="index.php?id=<?php echo $categorie['id']?>&action=products">
@@ -35,7 +34,8 @@
                         </a>
                     </div>
                 <?php endforeach; ?>
-            </div>  
+            </div>
+            <a class="addBtn" href="index.php?action=addCategorie"><i class="fa-solid fa-plus"></i></a>
         </div>
     </div>
 

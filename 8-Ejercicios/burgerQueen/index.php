@@ -32,4 +32,13 @@ $_SESSION['user'] = isset($_SESSION['user']) ? $_SESSION['user'] : "user";
         case 'editItem':
             $controller->editItems($id);
             break;
+        case 'removeCategorie':
+            $controller->removeCategorie($id);
+            break;
+        case 'removeItem':
+            $controller->removeItem($id);
+            break;
+        case 'addCategorie':
+            $controller->addCategorie();
+            break;
     }

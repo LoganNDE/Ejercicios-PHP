@@ -131,10 +131,11 @@ class BurgerModel {
     }
 
     
-    public function saveCategories($name){
+    public function saveCategorie($name, $image){
         try{
-            $insercion = $this->pdo->prepare("INSERT INTO categories(name) VALUES(:name)");
+            $insercion = $this->pdo->prepare("INSERT INTO categories(name,image) VALUES(:name, :image)");
             $insercion->bindParam(':name', $name);
+            $insercion->bindParam(':image', $image);
             return $insercion->execute();
         }catch (PDOException $e){
             die($e->getMessage());

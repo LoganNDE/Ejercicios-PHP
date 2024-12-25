@@ -12,12 +12,20 @@
     <div class="wrapper">
         <div class="app">
             <h1>Hola Logan, ¿que quieres comer hoy?</h1>
+            <?php if($_SESSION['user'] === 'admin'): ?>
+                <a class="closeSessionBtn" href="admin/closeSession.php">Cerrar Sesión</a>
+                <a class="changeModeBtn" href="index.php?mode=<?= $mode ?>&action=products&id=<?= $items[0]['category'] ?>">Modo <?= $mode ?></a>
+                <?php endif?>
             <div class="gridParent">
                 <?php foreach($items as $item): ?>
                     <div class="grid">
-                        <?php if($_SESSION['user'] === 'admin'): ?>
-                            <a class="editBtn" href="index.php?action=editItem&id=<?php echo $item['id']?>"><i class="fa-solid fa-pen"></i></a>
+                    <?php if($_SESSION['user'] === 'admin'): ?>
+                        <?php if($mode === 'edit'): ?>
+                            <a class="btnMode" href="index.php?action=editItem&id=<?php echo $item['id']?>"><i class="fa-solid fa-pen"></i></a>
+                        <?php else:?>
+                            <a class="btnMode" href="index.php?action=removeItem&id=<?php echo $item['id']?>"><i class="fa-solid fa-trash"></i></a>
                         <?php endif?>
+                    <?php endif?>
                         <img class="imgCategories" src="src/img/items/<?= $item['image'] ?>" alt="<?= $item['name'] ?>">
                         <div class="titleBox">
                             <h2><?= $item['name'] ?></h2>
@@ -25,6 +33,7 @@
                         </div>
                     </div>
                 <?php endforeach; ?>
+
             </div>
             <a class="btnHome" href="index.php">Volver al inicio</a>
         </div>

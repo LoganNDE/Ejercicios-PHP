@@ -59,6 +59,36 @@ class BurgerController {
     }
 
 
+    public function removeCategorie($id){
+        $this->burgerModel->deleteByIdCategories($id);
+        header("Location: index.php?mode=edit");
+        exit();
+    }
+
+    public function removeItem($id) {
+        $this->burgerModel->deleteByIdItems($id);
+        header("Location: index.php?action=porducts&mode=edit");
+        exit();
+    }
+
+    public function addCategorie(){
+        if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+            $name = $_REQUEST['name'];
+
+            if (is_uploaded_file($_FILES['image']['tmp_name'])) {
+                $fileName = $_FILES['image']['name'];
+                move_uploaded_file($_FILES['image']['tmp_name'], "src/img/categories/{$fileName}");
+            }
+
+            $this->burgerModel->saveCategorie($name, $fileName);
+            header("Location: index.php");
+        }else{
+            header("Location: admin/View/addCategorie.php");
+            exit();
+        }
+    }
+
+
     
 
     /*public function create() {
