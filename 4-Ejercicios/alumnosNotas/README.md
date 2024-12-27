@@ -6,16 +6,16 @@ Este ejercicio consiste en crear una pequeña aplicación web que permita gestio
 ### Formulario (Agregar alumnos)
 <hr>
 
-![imagen](https://github.com/user-attachments/assets/deca7fb6-754c-47ec-831c-663bf71bace9)
+![imagen](https://github.com/user-attachments/assets/6c3699dc-f872-4641-97b9-24803e2f87af)
 
 ### Listado de alumnos
 <hr>
 
-![imagen](https://github.com/user-attachments/assets/1e188d03-a8ae-4777-b9d9-27933c92566c)
+![imagen](https://github.com/user-attachments/assets/366ffb72-0239-462d-9084-ecd707f7037f)
 
 
 [Ver código (Vista)](https://github.com/LoganNDE/Ejercicios-PHP/blob/main/4-Ejercicios/alumnosNotas/agregarAlumnos-view.php)<br>
-[Ver código (Lógica)](https://github.com/LoganNDE/Ejercicios-PHP/blob/main/4-Ejercicios/alumnosNotas/alumnos.php)
+[Ver código (Lógica)](https://github.com/LoganNDE/Ejercicios-PHP/blob/main/4-Ejercicios/alumnosNotas/alumnos.php)<br>
 [Ver código (Borrar alumnos)](https://github.com/LoganNDE/Ejercicios-PHP/blob/main/4-Ejercicios/alumnosNotas/borrarAlumnos.php)<br>
 
 
