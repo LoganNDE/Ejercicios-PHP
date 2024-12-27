@@ -41,4 +41,7 @@ $_SESSION['user'] = isset($_SESSION['user']) ? $_SESSION['user'] : "user";
         case 'addCategorie':
             $controller->addCategorie();
             break;
+        case 'addItem':
+            $controller->addItem($id);
+            break;
     }

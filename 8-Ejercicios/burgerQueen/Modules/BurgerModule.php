@@ -142,4 +142,17 @@ class BurgerModel {
         }
     }
 
+
+    public function getCategoryByItemId($id){
+        try{
+            $query = "SELECT category FROM items WHERE id = :id";
+            $registro = $this->pdo->prepare($query);
+            $registro ->bindParam(':id', $id);
+            $registro->execute();
+            return $registro->fetch();
+        }catch (PDOException $e) {
+            die($e->getMessage());
+        }
+    }
+
 }
