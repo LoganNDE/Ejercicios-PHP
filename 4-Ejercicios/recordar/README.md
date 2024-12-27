@@ -24,5 +24,5 @@ Este ejercicio consiste en crear un formulario de inicio de sesión que incluya 
 [Ver código (Vista)](https://github.com/LoganNDE/Ejercicios-PHP/blob/main/4-Ejercicios/recordar/index.php)<br>
 [Ver código (Vista Login Correcto)](https://github.com/LoganNDE/Ejercicios-PHP/blob/main/4-Ejercicios/recordar/ok.php)<br>
 [Ver código (Vista Login Incorrecto)](https://github.com/LoganNDE/Ejercicios-PHP/blob/main/4-Ejercicios/recordar/ko.php)<br>
-[Ver código (Lógica)](https://github.com/LoganNDE/Ejercicios-PHP/blob/main/4-Ejercicios/recordar/ok.php)
+[Ver código (Lógica)](https://github.com/LoganNDE/Ejercicios-PHP/blob/main/4-Ejercicios/recordar/login-check.php)
 
