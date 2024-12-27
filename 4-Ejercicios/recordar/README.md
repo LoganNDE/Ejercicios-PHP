@@ -1,4 +1,4 @@
-[Volver al inicio](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/3-Ejercicios/#readme)
+[Volver al inicio](https://github.com/LoganNDE/Ejercicios-PHP/tree/main/4-Ejercicios/#readme)
 # 2️⃣ Recordar Sesión
 
 Este ejercicio consiste en crear un formulario de inicio de sesión que incluya campos para el usuario y la contraseña, además de una casilla de verificación ("Recordar"). Si el usuario selecciona la casilla, los datos ingresados deben almacenarse de forma que, en la siguiente sesión, el formulario los cargue automáticamente para facilitar el acceso.
