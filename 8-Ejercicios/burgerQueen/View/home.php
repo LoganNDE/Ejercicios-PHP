@@ -35,7 +35,9 @@
                     </div>
                 <?php endforeach; ?>
             </div>
+            <?php if($_SESSION['user'] === 'admin'): ?>
             <a class="addBtn" href="index.php?action=addCategorie"><i class="fa-solid fa-plus"></i></a>
+            <?php endif?>
         </div>
     </div>
 

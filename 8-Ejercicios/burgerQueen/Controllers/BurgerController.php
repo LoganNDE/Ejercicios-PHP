@@ -66,8 +66,9 @@ class BurgerController {
     }
 
     public function removeItem($id) {
+        $categorie = $this->burgerModel->getCategoryByItemId($id);
         $this->burgerModel->deleteByIdItems($id);
-        header("Location: index.php?action=porducts&mode=edit");
+        header("Location: index.php?action=products&mode=edit&id=".$categorie['category']);
         exit();
     }
 
@@ -86,6 +87,28 @@ class BurgerController {
             header("Location: admin/View/addCategorie.php");
             exit();
         }
+    }
+
+
+    public function addItem($id){
+        if  ($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $name = $_REQUEST['name'];
+            $description = $_REQUEST['description'];
+            $price = $_REQUEST['price'];
+            $category = $_REQUEST['category'];
+
+            if (is_uploaded_file($_FILES['image']['tmp_name'])) {
+                // subido con éxito
+                $fileName = $_FILES['image']['name'];
+                move_uploaded_file($_FILES['image']['tmp_name'], "src/img/items/{$fileName}");
+            }
+
+            $this->burgerModel->saveItem($name,$description,$price,$fileName, $category);
+            header("Location: index.php?action=products&id=" . $category);
+            exit();
+        }
+        header("Location: admin/View/addItem.php?id=".$id);
+        exit();
     }
 
 

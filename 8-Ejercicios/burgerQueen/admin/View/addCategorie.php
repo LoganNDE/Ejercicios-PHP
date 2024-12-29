@@ -10,7 +10,7 @@
     <div class="wrapper">
         <div class="app">
             <h1 class="titleEdit">Actualmente estas agregando una nueva categoria</span></h1>
-            <form class="formEditCategories" enctype="multipart/form-data" method="POST" action="../../index.php?action=addCategorie">
+            <form class="form" enctype="multipart/form-data" method="POST" action="../../index.php?action=addCategorie">
                 <label for="name">Nombre </label>
                 <input class="inputText" type="text" name="name">
                 <label for="image">Imagen </label>

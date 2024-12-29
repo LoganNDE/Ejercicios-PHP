@@ -36,6 +36,9 @@
 
             </div>
             <a class="btnHome" href="index.php">Volver al inicio</a>
+            <?php if($_SESSION['user'] === 'admin'): ?>
+                <a class="addBtn" href="index.php?action=addItem&id=<?= $items[0]['category'] ?>"><i class="fa-solid fa-plus"></i></a>
+            <?php endif?>
         </div>
     </div>
 

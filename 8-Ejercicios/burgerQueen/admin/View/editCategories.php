@@ -10,7 +10,7 @@
     <div class="wrapper">
         <div class="app">
             <h1 class="titleEdit">Actualmente estas modificando la categoria <br> <span class="categoryName"><?= $categories['name'] ?></span></h1>
-            <form class="formEditCategories" enctype="multipart/form-data" method="POST" action="index.php?action=editCategorie&id=<?= $categories['id'] ?>">
+            <form class="form" enctype="multipart/form-data" method="POST" action="index.php?action=editCategorie&id=<?= $categories['id'] ?>">
                 <label for="name">Nombre </label>
                 <input class="inputText" type="text" name="name" value= "<?= $categories['name'] ?>">
                 <input type="file" name="image">
