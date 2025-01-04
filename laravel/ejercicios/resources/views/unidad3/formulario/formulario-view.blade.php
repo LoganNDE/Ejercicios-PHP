@@ -1,15 +1,8 @@
+
 <?php
-    $nombre = $_REQUEST['name'];
-    $apellidos = $_REQUEST['lastname'];
-    $websiteURL = $_REQUEST['websiteURL'];
-    $email = $_REQUEST['email'];
-    $numberMembers = $_REQUEST['numberMembers'];
-    $gender = isset($_REQUEST['gender']) ? $_REQUEST['gender'] : "N/A";
-    $aficiones = isset($_REQUEST['aficiones']) ? $_REQUEST['aficiones'] : [];
-    $menu = isset($_REQUEST['favoriteMenu']) ? $_REQUEST['favoriteMenu'] : [];
+/*
 
-
-    if (empty($nombre)) {
+if (empty($nombre)) {
         $nombre = "N/A";
     } elseif (empty($apellidos)) {
         $apellidos = "N/A";
@@ -20,8 +13,7 @@
     } elseif (empty($numberMembers)) {
         $numberMembers = "N/A";
     }
-?>
-
+*/    ?>
 
 
 

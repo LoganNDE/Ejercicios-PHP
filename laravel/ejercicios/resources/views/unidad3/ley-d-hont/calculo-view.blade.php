@@ -1,4 +1,3 @@
-<?php include("calculo.php") ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -48,9 +47,8 @@
             ?>
     </table>
     <div class="container d-flex justify-content-center">
-    <a href="http://localhost/php/Ejercicios-PHP/3-Ejercicios/ley-d-hont" class="btn btn-primary">Volver al formulario</a>
+    <a href="{{ url('ejercicios/unidad3/ley-d-hont') }}" class="btn btn-primary">Volver al formulario</a>
     </div>
-
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

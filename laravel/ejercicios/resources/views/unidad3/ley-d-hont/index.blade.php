@@ -19,7 +19,8 @@
 
     <div class="container mt-5">
         <h1 class="text-center mb-4">Cálculo de la Ley D'Hondt</h1>
-        <form method="POST" action="calculo-view.php" class="mb-4">
+        <form method="POST" action="{{ route('calculo-view') }}" class="mb-4">
+        @csrf
           <div class="row">
             <div class="col-md-6">
               <label for="partido1" class="form-label">Partido 1 - Nombre</label>

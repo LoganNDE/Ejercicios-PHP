@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\calculadoraController;
+use App\Http\Controllers\formularioController;
+use App\Http\Controllers\leydHont;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,3 +36,10 @@ Route::get('/ejercicios/{unit}/{exercises}', function($unit ,$exercises){
         abort(404);
     }
 });
+
+
+Route::post('ejercicios/unidad3/ley-d-hont/calculo-view', [leydHont::class, 'calculo'])->name('calculo-view');
+
+Route::post('ejercicios/unidad3/calculadora/index', [calculadoraController::class, 'calcularResultado'])->name('calculadora');
+
+Route::post('ejercicios/unidad3/formulario/formulario-view', [formularioController::class, 'procesarInfo'])->name('procesarInfo');
