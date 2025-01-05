@@ -33,7 +33,7 @@
             <p class="lead">Usuario o contraseña incorrectos. Por favor, intenta de nuevo.</p>
             <p class="lead">Serás redireccionado en 5 segundos.</p>
 
-            <a href="login.html" class="btn btn-danger">Volver al Login</a>
+            <a href=" {{ route('loginGET') }} " class="btn btn-danger">Volver al Login</a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,5 +1,3 @@
-<?php include("plantilla.php"); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

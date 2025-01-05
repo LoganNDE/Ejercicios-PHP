@@ -26,7 +26,7 @@
             </div>
             <h1 class="text-success">Inicio de sesión exitoso</h1>
             <p class="lead">Bienvenido de nuevo, has iniciado sesión correctamente.</p>
-            <a href="login.html" class="btn btn-success">Ir al Dashboard</a>
+            <a href="{{ route('loginGET') }}" class="btn btn-success">Ir al Dashboard</a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

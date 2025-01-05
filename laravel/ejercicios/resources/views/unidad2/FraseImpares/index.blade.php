@@ -1,4 +1,5 @@
-<?php include("fraseImpar.php") ?>
+@include('unidad2.FraseImpares.fraseImpar')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

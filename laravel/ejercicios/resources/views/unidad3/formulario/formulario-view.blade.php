@@ -1,22 +1,3 @@
-
-<?php
-/*
-
-if (empty($nombre)) {
-        $nombre = "N/A";
-    } elseif (empty($apellidos)) {
-        $apellidos = "N/A";
-    } elseif (empty($websiteURL)) {
-        $websiteURL = "N/A";
-    } elseif (empty($email)) {
-        $email = "N/A";
-    } elseif (empty($numberMembers)) {
-        $numberMembers = "N/A";
-    }
-*/    ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

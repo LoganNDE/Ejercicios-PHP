@@ -12,7 +12,8 @@
     <div class="container p-5">
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-md-6 bg-light rounded border p-4">
-            <form action="procesar_formulario.php" method="POST">
+            <form action=" {{ route('loginCheck') }} " method="POST">
+              @csrf
               <div class="form-group">
                 <label for="user">Usuario</label>
                 <input type="text" class="form-control" id="user" name="user" placeholder="Ingresa tu usuario">
