@@ -33,7 +33,7 @@ Route::get('/ejercicios/{unit?}', function($unit=null){
     }else{
         abort(404);
     }
-});
+})->name("inicio");
 
 Route::get('/ejercicios/{unit}/{exercises}', function($unit ,$exercises){
     if (view()->exists("$unit/$exercises/index")){
