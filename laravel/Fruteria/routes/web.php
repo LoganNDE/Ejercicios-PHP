@@ -9,6 +9,7 @@ use App\Models\Fruteria;
 Route::get('/', [FruteriaController::class, 'index'])->name('index');
 
 Route::resource('fruteria', FruteriaController::class)->except(['index']);
+Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
 
 Route::get('login', [LoginController::class, 'redirectToLogin'])->name('redirectLogin');

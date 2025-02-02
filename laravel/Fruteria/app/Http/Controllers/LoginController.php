@@ -12,6 +12,12 @@ class LoginController extends Controller
         return view('login');
     }
 
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('index');
+    }
+
 
     public function checkLogin(Request $request)
     {

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('frutas', function (Blueprint $table) {
             $table->id(); // Crea una columna id única y autoincremental
             $table->string('nombre'); // Columna string para el nombre
-            $table->string('imagen'); // Columna string para la imagen
+            $table->string('imagen')->nullable(); // Columna string para la imagen
             $table->string('temporada'); // Columna string para la temporada
             $table->integer('precio'); // Columna integer para el precio 
             $table->integer('stock'); // Columna integer para el stock

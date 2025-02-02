@@ -65,7 +65,7 @@ class FruteriaController extends Controller
 
             $validateData = $request->validate([
                 'nombre' => 'required|string|max:64',
-                'imagen' => 'required|string',
+                'imagen' => 'nullable|string',
                 'temporada' => 'required|string|min:2',
                 'precio' => 'required|numeric',
                 'stock' => 'required|numeric',

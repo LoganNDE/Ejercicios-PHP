@@ -9,15 +9,19 @@
     <title>@yield('titulo')</title>
 </head>
 <body>
-    <header class="w-full bg-blue-300 flex justify-center">
+    <header class="w-full bg-gray-100 flex justify-center">
         <div class="w-4/6 flex justify-between items-center">
             <img src="" alt="LOGO">
-            <a class="px-6 h-12 flex items-center justify-center text-lg rounded-md bg-slate-400" href="{{ route('redirectLogin') }}">Iniciar Sesion</a>
+            @if (auth()->check())
+                <a class="px-4 h-8 flex items-center justify-center no-underline text-gray-50 text-lg rounded-md bg-slate-400" href="{{ route('logout') }}">Cerrar sesión</a>
+            @else
+            <a class="px-4 h-8 flex items-center justify-center text-lg rounded-md bg-slate-400" href="{{ route('redirectLogin') }}">Iniciar sesión</a>
+            @endif
         </div>
         
     </header>
     @yield('contenido')
-    <footer class="w-full bg-blue-300 flex justify-center items-center">
+    <footer class="w-full bg-gray-100 flex justify-center items-center">
         <p>Hecho por Logan Naranjo Rodriguez</p>
     </footer>
 </body>
